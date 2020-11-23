@@ -1,0 +1,76 @@
+create database employee;
+
+use employee;
+
+create table employee(employee_id int primary key,first_name varchar(30),last_name varchar(30),phone_number bigint,hire_date date,job_id int not null);
+
+insert into employee values(101,'rajesh','padmanabhuni',9490961415,'2020-10-20',1001);
+
+insert into employee values(102,'akshith','krishna',9490961411,'2020-10-19',1002);
+
+insert into employee values(103,'vignesh','ganapathi',9490961412,'2020-09-20',1003);
+
+insert into employee values(104,'pavithra','p',9999,'2020-11-20',1004);
+
+insert into employee values(105,'nihitha','n',8888,'2020-01-20',1005);
+
+insert into employee values(106,'keerthi','k',7777,'2010-11-20',1006);
+
+insert into employee values(107,'vaishnavi','k',6666,'2012-11-20',1007);
+
+insert into employee values(108,'anusha','palla',5555,'2010-12-20',1008);
+
+insert into employee values(109,'anusha','k',1111,'2007-07-20',1009);
+
+insert into employee values(110,'chandana','c',1222,'2001-10-20',1004);
+
+select * from employee;
+alter table employee add salary decimal(8);
+
+insert into employee values(111,'lekha','l',1223,'2000-10-20',1011,35000);
+
+update employee set salary=22000 where employee_id=101;
+
+update employee set salary=42000 where employee_id=102;
+
+update employee set salary=120000 where employee_id=103;
+
+update employee set salary=1000 where employee_id=104;
+
+update employee set salary=32000 where employee_id=105;
+
+update employee set salary=52000 where employee_id=106;
+
+update employee set salary=22000 where employee_id=107;
+
+update employee set salary=12000 where employee_id=108;
+
+update employee set salary=32000 where employee_id=109;
+
+update employee set salary=22500 where employee_id=110;
+
+insert into employee values(163,'lekha','l',1232,'2000-10-20',1011,35000);
+
+select first_name,last_name from employee where salary > (select salary from employee where employee_id=163);
+select * from employee as a,employee as b where a.salary<b.salary;
+
+
+select employee_id, concat(first_name,last_name) from employee where salary>(select avg(salary) from employee);
+
+
+select concat(first_name,last_name),employee_id,salary from employee;
+
+
+select * from employee where salary=32000 and employee_id=105;
+
+
+select * from employee where employee_id in(101,105,126);
+
+
+select * from employee where salary between 10000 and 30000;
+
+
+select * from employee where salary between (select min(salary) from employee) and 25000;
+
+
+select * from employee where salary=(select min(salary) from employee);
