@@ -20,62 +20,25 @@ public class StudentEx {
 		String password=sc.next(); //username
 		Connection con=null;
 		
-		/*try 
-		{
-			System.out.println(con);
-			con=DriverManager.getConnection(url,user,password);
-			System.out.println(con);
-			if(con!=null)
-			{
-			
-			}
-			else
-			{
-				System.out.println("connection not made");
-				System.exit(1);
-			}
-		} 
-		catch (SQLException e1) 
-		{
-			// TODO Auto-generated catch block
-			
-		}*/
-		try
-		{
-			con=DriverManager.getConnection(url,user,password);
-			
-			DatabaseMetaData dbmd=con.getMetaData();
-			
-			String table[]= {"TABLE"};
-			
-			ResultSet rs1=dbmd.getTables(null, null, "%", table);
-			while(rs1.next())
-			{
-				System.out.println(rs1.getString("TABLE_NAME"));
-			}
-			
-			if(con!=null)
-			{
-				Class.forName("com.mysql.cj.jdbc.Driver"); //loading driver class
-				
-				Statement st=con.createStatement(); //creating statement
-						ResultSet rs=st.executeQuery("select * from customer");
-						while(rs.next())
-						{
-							
-						}
-			}
-		}
-		catch(Exception e)
-		{
-			System.out.println("Database not exist");
-			System.exit(1);
-			
-		}
 		try
 		{
 			con=DriverManager.getConnection(url,user,password);
 			Class.forName("com.mysql.cj.jdbc.Driver"); //loading driver class
+			DatabaseMetaData dbmd=con.getMetaData();
+			
+			String table[]= {"TABLE"};
+			
+			ResultSet rs1=dbmd.getTables(null, null, "customer", table);
+			if(rs1.next())
+			{
+				
+			}
+			else
+			{
+				System.out.println("table not exist");
+				System.exit(0);
+			}
+			
 			Statement st=con.createStatement(); //creating statement
 			int flag=0;
 			while(flag==0)
