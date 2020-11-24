@@ -1,3 +1,6 @@
+//Student database
+//customer table
+
 package com.jdbc;
 
 import java.sql.Connection;
