@@ -13,7 +13,7 @@ public class StudentEx {
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);
-		String url="jdbc:mysql://localhost:3306/hero"; //local-host & db-name
+		String url="jdbc:mysql://localhost:3306/student"; //local-host & db-name
 		System.out.println("Enter username");
 		String user=sc.next(); //password
 		System.out.println("Enter password");
