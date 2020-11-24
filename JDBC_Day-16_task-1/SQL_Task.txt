@@ -1,0 +1,141 @@
+create database company;
+
+use company;
+
+create table employee(eid int primary key, name varchar(30) not null, age int, salary decimal(8) check(salary>0));
+
+insert into employee values(101,'Rajesh',22,30000);
+
+insert into employee values(102,'Akshith',22,30000);
+
+insert into employee values(103,'Raghu',23,30000);
+
+insert into employee values(104,'vignesh',22,30000);
+
+insert into employee values(105,'shiva',32,30000);
+
+select avg(salary) from employee;
+select count(name) from employee where eid=103;
+
+update employee set salary=22000 where eid=104;
+
+select count(distinct salary) from employee;
+
+select first(salary) from employee;
+
+select max(eid) from employee;
+
+select min(eid) from employee;
+
+select sum(salary) from employee;
+
+select ucase(name) from employee;
+
+select lcase(name) from employee;
+
+select mid(name,1,3) from employee;
+
+select round(salary) from employee;
+
+select name, Ascii(name) as NumCodeOfFirstChar from employee;
+
+select bin(10);
+select bit_length(10);
+
+select char_length('rajesh');
+
+select concat_ws(' ','rajesh','rockzz');
+
+select concat('rajesh','rockzz');
+
+select elt(2,'rajesh','rockzz');
+
+select field('mounika','rajesh','rockzz','mounika','lakshmi');
+
+select find_in_set('mounika','rajesh,rockzz,mounika,lakshmi');
+
+select format(523.754,2);
+select hex(10);
+select insert('rajesh',6,0,'raj');
+
+select instr((select name from employee where eid=101),'raj');
+
+select left((select name from employee where eid=101),3);
+
+select length('rajesh');
+
+select * from employee where name like '%h';
+
+select locate('aj','rajesh');
+
+select lower('RAJESH');
+
+select lpad('akshith',10,'$');
+
+select ltrim('  rajesh  ');
+
+select * from employee where name not like '%h';
+
+select * from employee where name not regexp '^r';
+
+select octet_length('rajesh');
+select ord('rajesh');
+
+select position('rajesh' in 'rajeshrockzz');
+
+select repeat('$raj$',5);
+
+select replace('rajeshrockzz','rockzz','raj');
+
+select reverse('rajesh');
+
+select name,right(name,3) from employee where eid=101;
+
+select * from employee where name rlike '^r';
+
+select * from employee where name not rlike '^r';
+
+select rpad('akshith',10,'$');
+select rtrim('  rajesh  ');
+
+select strcmp('rajesh','akshith');
+
+select name,unhex(name) from employee where eid=101;
+
+select eid, abs(eid) from employee;
+
+select eid, acos(eid) from employee;
+
+select eid, asin(eid) from employee;
+
+select eid, atan2(eid) from employee;
+
+select eid, atan(eid) from employee;
+
+select eid, ceil(102) from employee;
+
+select eid, cos(eid) from employee;
+
+select eid, cot(eid) from employee;
+
+select eid, log10(eid) from employee;
+
+select eid, log2(eid) from employee;
+
+select eid, log(eid) from employee;
+
+select eid, oct(eid) from employee;
+
+select eid, radians(eid) from employee;
+
+select eid, round(eid) from employee;
+
+select eid, sign(eid) from employee;
+
+select eid, sin(eid) from employee;
+
+select eid, sqrt(eid) from employee;
+
+select eid, tan(eid) from employee;
+
+select eid, truncate(salary) from employee;
