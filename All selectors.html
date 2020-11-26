@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	
+	
+	#firstparagh{
+  		background-color:#ff3366;
+		color:#66ff00;
+	}
+	p.hai,p.class2{
+  		background-color:#66ff00;
+		color:#3366ff;
+	}
+	h1{
+  		background-color:#0033ff;
+	}
+	.center{
+  		background-color:#cc33cc;
+		color:#6600cc;
+	}
+	q,bdo{
+	background-color:#ff3366;
+	}
+	div,p{
+  		background-color:#66ff00;
+		color:#3366ff;
+	}
+	div>h1{
+  		background-color:#3333ff;
+		color:#3366ff;
+	}
+	div+p{
+	background-color:#669999;
+	}
+	p~ul{
+	background-color:#ff3300;
+	}
+	a[target]{
+	background-color: blue;
+	}
+	a[target=_top]{
+	background-color: red;
+	}
+	[title~=flower]{
+	background-color: yellow;
+	}
+	[lang|=en]{
+	background-color:violet;
+	}
+	img[title^="dinner"]
+	{
+     background-color:white;
+	}
+	img[src$=".pdf"]
+	{
+     background-color:blue;
+	}
+	img[src*="rajesh"]
+	{
+     background-color:white;
+	}
+	a:active{
+	background-color:orange;
+	}
+	p::after{
+	content: "this after p tag";
+	}
+	p::before{
+	content: "this before p tag";
+	}
+	input:checked{
+	height:50px;
+	width:50px;
+	}
+	input:default{
+	box-shadow: 0 0 2px 1px coral;
+	}
+	input[type=text]:disabled{
+	background: #dddddd;
+	}
+	input[type=text]:enabled{
+	background: #ff3300;
+	}
+	pre:empty{
+	width:100px;
+	height:20px;
+	background: orange;
+	}
+	p::first-letter{
+	font-size:200%;
+	color: violet;
+	}
+	ul:first-child{
+	font-size:200%;
+	color: white;
+	}
+	ul::first-line{
+	font-size:200%;
+	color: yellow;
+	}
+	p:first-of-type{
+	font-size:200%;
+	color: violet;
+	}
+	input:focus{
+	font-size:200%;
+	color: orange;
+	}
+	a:hover{
+	background-color:white;
+	}
+	input:in-range{
+	border: 3px solid orange;
+	}
+	input:out-of-range{
+	border: 3px solid orange;
+	}
+	ul:last-child{
+	font-size:200%;
+	color: green;
+	}
+	::placeholder{
+	color:rgb(0,255,205);
+	}
+	p:last-of-type{
+	font-size:200%;
+	color: blue;
+	}
+	p:nth-child(2){
+	font-size:200%;
+	color: red;
+	}
+	/*:root{
+	background: #66cccc;
+	}*/
+	::selection{
+	color: red;
+	background: yellow;
+	}
+	:target{
+		border: 2px solid green;
+		background-color:#33ccff;
+		}
+	p:nth-last-child(2){
+	font-size:200%;
+	color: #ff33cc;
+	}
+	p:nth-last-type(1){
+	font-size:200%;
+	color: #33ff00;
+	}
+	input:invalid{
+	border: 2px solid red;
+	}
+	input:valid{
+	background-color: violet;
+	}
+	a:link{
+	background-color: violet;
+	}
+	p:only-of-type{
+	background: blue;
+	}
+	p:only-child{
+	background: orange;
+	}
+	input:optional{
+	background-color: yellow;
+	}
+	input:read-only{
+	background-color: yellow;
+	}
+	input:read-write{
+	background-color: red;
+	}
+	input:required{
+	background-color: blue;
+	}
+	a:visited{
+	color:pink;
+	}
+  </style>
+ </head>
+ <body>
+  <h1> haii </h1>
+  <input required>
+  <p id="firstparagh">hello</p>hello
+  <p class="hai">haii</p>
+  <p class="class2">how r u??</p>
+  <ul>
+  <li>one</li>
+   <li>two</li>
+    <li>three</li>
+  </ul>
+  <h2 class="center">im fine</h2>
+   <h2 class="center">im fine</h2>
+   <q>short quote</q>
+   <bdo>body</bdo>
+   <div>
+	<p>haiii</p>
+	<p>how are you</p>
+	<p>im fine</p>
+	 <h1> haii </h1>
+	</div>
+	<p>rajesh</p>
+	<a href="inline.html" target="_blank">incline class file</a>
+	<a href="orderlist" target="_top">orderlist</a>
+	<img src="person1.jpg" title="flower" width"220" height="120">
+	<img src="person1.jpg" title="dinner" width"220" height="120">
+	<img src="person1.pdf" title="dinner" width"220" height="120">
+	<img src="rajesh.jpg" title="dinner" width"220" height="120">
+	<form >
+	<input type="radio" checked="checked" value="male" name="gender">male<br>
+	<input type="radio"  value="male" name="gender" checked>female<br>
+	enter <input type="text"  value="disabled"  disabled="disabled"><br>
+	enter <input type="text"  value="enter your name" "><br>
+	<pre></pre>
+	<input type="number" min="5" max="10" value="8">
+	<input type="email" value="email">
+	<input type="text" name="name" placeholder="enter name">
+	<input value="hello">
+	<input readonly value="enter name">
+	<input required>
+	<div><p>only of type</p></div>
+	<p><a href="hello.html">target-selector</a></p>
+		<input type="email" value="email@gmail.com">
+
+ </body>
+</html>
+
