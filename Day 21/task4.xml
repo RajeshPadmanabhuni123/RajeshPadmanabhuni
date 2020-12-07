@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE advancedaddress [
+<!ELEMENT advancedaddress (name,address,email,company)>
+<!ELEMENT name (firstname,lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT address (street,dno,zip,country)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT dno (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT company (companyname,websites)>
+<!ELEMENT companyname (#PCDATA)>
+<!ELEMENT websites (sitename,siteaddress)>
+<!ELEMENT sitename (#PCDATA)>
+<!ELEMENT siteaddress (#PCDATA)>
+]>
+<advancedaddress>
+<name>
+<firstname>akshith</firstname>
+<lastname>krishna</lastname>
+</name>
+<address>
+<street>wall street</street>
+<dno>5/456/45</dno>
+<zip>523698</zip>
+<country>India</country>
+</address>
+<email>akshith@hello.com</email>
+<company>
+<companyname>abc technology</companyname>
+<websites>
+<sitename>www.abctech.com</sitename>
+<siteaddress>192.36.25.14</siteaddress>
+</websites>
+</company>
+</advancedaddress>

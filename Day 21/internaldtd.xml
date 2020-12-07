@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student [
+<!ELEMENT student (studid,sname,sadd)>
+<!ELEMENT stdid (#PCDATA)>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT sadd (#PCDATA)>
+]>
+
+<student>
+	<stdid>67</stdid>
+	<sname>rajesh</sname>
+	<sadd>nellore</sadd>
+	
+</student>

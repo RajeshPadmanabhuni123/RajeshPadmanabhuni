@@ -1,0 +1,6 @@
+<!ELEMENT gmail (subject,to,from,messageBody)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT messageBody (#PCDATA)>

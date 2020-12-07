@@ -1,0 +1,22 @@
+<!ELEMENT JNTUA (Home,Genesis-JNTUA,Chancellor,ViceChancellor,Administration,Academics,examination,ConvocationReports,placements,Contactus )+>
+<!ELEMENT Home (#PCDATA)>
+<!ELEMENT Genesis-JNTUA (#PCDATA)>
+<!ELEMENT Chancellor (#PCDATA)>
+<!ELEMENT ViceChancellor (#PCDATA)>
+<!ELEMENT Administration (#PCDATA)>
+<!ELEMENT Academics (departments)>
+<!ELEMENT departments (ece,eee,cse,mech)>
+<!ELEMENT ece (#PCDATA)>
+<!ELEMENT eee (#PCDATA)>
+<!ELEMENT cse (#PCDATA)>
+<!ELEMENT mech (#PCDATA)>
+<!ELEMENT  examination (Timetable,results,questionpapers)>
+<!ELEMENT Timetable (#PCDATA)>
+<!ELEMENT results (#PCDATA)>
+<!ELEMENT questionpapers (#PCDATA)>
+<!ELEMENT ConvocationReports (#PCDATA)>
+<!ELEMENT placements (yearwise,companywise,staff)>
+<!ELEMENT yearwise (#PCDATA)>
+<!ELEMENT companywise (#PCDATA)>
+<!ELEMENT staff (#PCDATA)>
+<!ELEMENT Contactus (#PCDATA)>

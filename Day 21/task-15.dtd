@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE email SYSTEM "task9.dtd">
+<gmail>
+<subject>regarding pending work</subject>
+<to>Akshith@ak.com</to>
+<cc>Akshithtech@ak.com</cc>
+<from>Rajesh@rj.com</from>
+<messageBody>Please consider me for this time.</messageBody>
+</gmail>

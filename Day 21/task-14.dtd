@@ -1,0 +1,9 @@
+<!ELEMENT basicbusiness (addressblocks,letterhead,messageBody)>
+<!ELEMENT addressblocks (from,to,cc,bcc)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT bcc (#PCDATA)>
+<!ELEMENT letterhead (subject)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT messageBody (#PCDATA)>

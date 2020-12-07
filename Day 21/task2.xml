@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE addressbooks[
+<!ELEMENT addressbooks (addressbook*)>
+<!ELEMENT addressbook (personName,homeAddress,telephoneNumber+,emailAddress+,birthDate)>
+<!ELEMENT personName (#PCDATA)>
+<!ELEMENT homeAddress (#PCDATA)>
+<!ELEMENT telephoneNumber (#PCDATA)>
+<!ELEMENT emailAddress (#PCDATA)>
+<!ELEMENT birthDate EMPTY>
+]>
+
+
+<addressbooks>
+	<addressbook>
+		<personName>Rajesh</personName>
+		<homeAddress>Nellore</homeAddress>
+		<telephoneNumber>7981988418</telephoneNumber>
+		<emailAddress>raj@gmail.com</emailAddress>
+		<birthDate>2000-11-30</birthDate>
+		
+	</addressbook>
+	
+	
+	<addressbook>
+		<personName>Akshith</personName>
+		<homeAddress>Banglore</homeAddress>
+		<telephoneNumber>7979797979</telephoneNumber>
+		<emailAddress>aks@gmail.com</emailAddress>
+		<birthDate>1974-08-15</birthDate>
+		
+	</addressbook>
+</addressbooks>
