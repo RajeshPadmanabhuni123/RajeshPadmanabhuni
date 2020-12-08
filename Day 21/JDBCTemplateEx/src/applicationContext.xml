@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  
+	 <bean id="cust" class="com.src.Customer">
+		<property name="custid" value="51897572"></property>
+		<property name="custname" value="Rajesh"></property>
+		<property name="custmob" value="7981988418"></property>
+		<property name="custdob" value="12-03-Sorry"></property>
+	 </bean>
+	 
+	 <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	 	<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+	 	<property name="url" value="jdbc:mysql://localhost:3306/Spring"/>
+	 	<property name="username" value="root"/>
+	 	<property name="password" value="root"/>
+	 </bean>
+	 <bean id="jdbctemp" class="org.springframework.jdbc.core.JdbcTemplate">
+	 	<property name="dataSource" ref="ds"/>
+	 </bean>
+	 <bean id="custdao" class="com.src.CustDao">
+	 	<property name="jdbctemp" ref="jdbctemp"/>
+	 </bean>
+ </beans>
